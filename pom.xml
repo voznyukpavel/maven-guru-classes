@@ -1,61 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.splachgenerator</groupId>
-    <artifactId>helloworld</artifactId>
+    <groupId>com.example</groupId>
+    <artifactId>scala-java-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
+        <scala.version>2.13.14</scala.version>
         <java.version>22</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <kotlin.version>2.0.0</kotlin.version>
     </properties>
 
-
     <dependencies>
-        <!-- Kotlin standard library -->
+        <!-- Scala standard library -->
         <dependency>
-            <groupId>org.jetbrains.kotlin</groupId>
-            <artifactId>kotlin-stdlib</artifactId>
-            <version>${kotlin.version}</version>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>${scala.version}</version>
         </dependency>
     </dependencies>
 
     <build>
         <plugins>
-            <!-- Kotlin plugin -->
+            <!-- Scala plugin -->
             <plugin>
-                <groupId>org.jetbrains.kotlin</groupId>
-                <artifactId>kotlin-maven-plugin</artifactId>
-                <version>${kotlin.version}</version>
+                <groupId>net.alchim31.maven</groupId>
+                <artifactId>scala-maven-plugin</artifactId>
+                <version>4.5.6</version>
                 <executions>
                     <execution>
-                        <id>compile</id>
-                        <phase>process-sources</phase>
+                        <id>compile-scala</id>
+                        <phase>compile</phase>
                         <goals>
                             <goal>compile</goal>
                         </goals>
                     </execution>
                     <execution>
-                        <id>test-compile</id>
+                        <id>test-compile-scala</id>
                         <phase>test-compile</phase>
                         <goals>
-                            <goal>test-compile</goal>
+                            <goal>testCompile</goal>
                         </goals>
                     </execution>
                 </executions>
-                <configuration>
-                    <sourceDirs>
-                        <sourceDir>src/main/kotlin</sourceDir>
-                        <sourceDir>src/main/java</sourceDir>
-                    </sourceDirs>
-                </configuration>
             </plugin>
+
             <!-- Java compiler plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
