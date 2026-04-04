@@ -1,12 +1,14 @@
-package main.tests;
+package main.app;
 
-import main.app.JavaHelloWorld;
+import static org.junit.Assert.*;
 
 public class JavaHelloWorldTest {
 
+    @org.junit.Test
     public void testGetHelloWorld() {
         JavaHelloWorld javaHelloWorld = new JavaHelloWorld();
         String result = javaHelloWorld.getHelloWorld();
-        assert ("Hello, World!".equals(result)) : "Expected 'Hello, World!' but got '" + result + "'";
+        assertEquals("Hello, World!", result);
     }
+
 }
