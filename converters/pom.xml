@@ -22,7 +22,6 @@
             <artifactId>web-api</artifactId>
             <version>${project.version}</version>
         </dependency>
-
         <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct</artifactId>
@@ -47,6 +46,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>

@@ -10,6 +10,7 @@
     </parent>
 
     <artifactId>web-app</artifactId>
+
  <dependencies>
      <dependency>
          <groupId>com.splachgenerator</groupId>
