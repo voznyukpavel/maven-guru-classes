@@ -14,4 +14,36 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>nexux-snaphots</id>
+            <url>http://localhost:8081/repository/nexux-snapshots/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+            <repository>
+                <id>nexux-release</id>
+                <url>http://localhost:8081/repository/nexux-release/</url>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                    <enabled>false</enabled>
+                </snapshots>
+            </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>nexux-release</id>
+            <url>http://localhost:8081/repository/nexux-release/</url>
+        </repository>
+         <snapshotRepository>
+            <id>nexux-snapshots</id>
+            <url>http://localhost:8081/repository/nexux-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
 </project>
