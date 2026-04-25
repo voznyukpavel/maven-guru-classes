@@ -13,7 +13,7 @@
             <password>${env.REPSY_S_P}</password>
         </server>
         <server>
-            <id>git</id>
+            <id>github</id>
             <username>${env.REPSY_U}</username>
             <password>${env.GIT_T}</password>
         </server>
