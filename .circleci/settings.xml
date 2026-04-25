@@ -1,0 +1,16 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <servers>
+        <server>
+            <id>repsy-release</id>
+            <username>${env.REPSY_U}</username>
+            <password>${env.REPSY_R_P}</password>
+        </server>
+        <server>
+            <id>repsy-snapshots</id>
+            <username>${env.REPSY_U}</username>
+            <password>${env.REPSY_S_P}</password>
+        </server>
+    </servers>
+</settings>
