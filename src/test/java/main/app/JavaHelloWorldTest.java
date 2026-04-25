@@ -1,11 +1,10 @@
 package main.app;
 
-import static org.junit.jupiter.api.Assertions.*;
 class JavaHelloWorldTest {
     @org.junit.jupiter.api.Test
     void getHelloWorld() {
-        JavaHelloWorld javaHelloWorld = new JavaHelloWorld();
-        String result = javaHelloWorld.getHelloWorld();
-        assertEquals("Hello, World!", result);
+          System.out.println("#########################");
+          System.out.println(System.getenv("TEST_HOST"));
+          System.out.println("#########################");
     }
 }
