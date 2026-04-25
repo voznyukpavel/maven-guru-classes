@@ -61,11 +61,11 @@
     <distributionManagement>
         <repository>
             <id>repsy-release</id>
-            <url>https://repsy.io/mvn/user99044342/repsy-guru-release/</url>
+            <url>https://repo.repsy.io/user99044342/repsy-guru-release</url>
         </repository>
          <snapshotRepository>
             <id>repsy-snapshots</id>
-            <url>https://repsy.io/mvn/user99044342/repsy-guru-snapshots/</url>
+            <url>https://repo.repsy.io/user99044342/repsy-guru-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
