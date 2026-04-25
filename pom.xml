@@ -60,12 +60,12 @@
 
     <distributionManagement>
         <repository>
-            <id>nexux-release</id>
-            <url>http://localhost:8081/repository/nexux-release/</url>
+            <id>repsy-release</id>
+            <url>https://repsy.io/user99044342/repsy-guru-release/</url>
         </repository>
          <snapshotRepository>
-            <id>nexux-snapshots</id>
-            <url>http://localhost:8081/repository/nexux-snapshots/</url>
+            <id>repsy-snapshots</id>
+            <url>https://repsy.io/user99044342/repsy-guru-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
