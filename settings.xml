@@ -14,4 +14,12 @@
         </server>
     </servers>
 
+    <mirrors>
+        <mirror>
+            <id>central</id>
+            <name>Central Repository</name>
+            <mirrorOf>*</mirrorOf>
+            <url>http://localhost:8081/repository/nexux-group/</url>
+        </mirror>
+    </mirrors>
 </settings>
