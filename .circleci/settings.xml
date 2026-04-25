@@ -12,5 +12,10 @@
             <username>${env.REPSY_U}</username>
             <password>${env.REPSY_S_P}</password>
         </server>
+        <server>
+            <id>git</id>
+            <username>${env.REPSY_U}</username>
+            <password>${env.GIT_T}</password>
+        </server>
     </servers>
 </settings>

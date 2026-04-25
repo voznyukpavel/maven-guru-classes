@@ -31,14 +31,10 @@ jobs:
 
       - run:
           name: Deploy
-          command: mvn deploy -s .circleci/settings.xml
-
-      - run:
-          name: Verify snapshot download
           command: |
-            mvn dependency:get \
-              -Dartifact=com.splachgenerator:helloworld:1.2-SNAPSHOT \
-              -s .circleci/settings.xml
+                   git config --global user.email "voznyuk.pavel.p@gmail.com"
+                   git config --global user.name "Kick Build"
+                   mvn --batch-mode release:prepare release:perform -s .circleci/settings.xml
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/guides/orchestrate/workflows/ & https://circleci.com/docs/reference/configuration-reference/#workflows
